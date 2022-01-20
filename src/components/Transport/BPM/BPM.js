@@ -13,7 +13,8 @@ const Value = styled.input`
   outline: none;
   max-width: 40px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
+  margin-left: 5px;
 `;
 
 const BPM = () => {

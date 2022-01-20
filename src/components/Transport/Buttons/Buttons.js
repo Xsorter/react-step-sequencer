@@ -9,8 +9,8 @@ const Button = styled.button`
   background: none;
   outline: none;
   border: none;
-  height: 26px;
-  width: 30px;
+  height: 24px;
+  width: 28px;
   cursor: pointer;
   transition: opacity ease-out 0.2s;
   &:hover {

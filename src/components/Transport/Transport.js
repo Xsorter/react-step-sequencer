@@ -4,7 +4,6 @@ import BPM from './BPM/BPM';
 
 const Wrapper = styled.div`
   padding: 10px;
-  background: green;
   display: flex;
   align-items: center;
 `;

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import RowGroup from './RowGroup/RowGroup';
+import { samplerData, synthData } from './synthsData';
 
 const Outer = styled.div`
   padding: 0 10px 10px;
@@ -18,10 +19,10 @@ const Sequencer = () => {
   return (
     <Outer>
       <Wrapper>
-        <RowGroup title='Sampler' type='sampler'>
+        <RowGroup synthData={samplerData} title='Sampler' type='sampler'>
           XXXXXXX
         </RowGroup>
-        <RowGroup title='Synths' type='synths'>
+        <RowGroup synthData={synthData} title='Synths' type='synths'>
           ZZZZZZZ
         </RowGroup>
       </Wrapper>

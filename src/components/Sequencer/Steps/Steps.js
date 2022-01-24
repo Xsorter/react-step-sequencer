@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Step from './Step';
 
 const Wrapper = styled.div`
   margin-left: 10px;
@@ -10,45 +11,14 @@ const Wrapper = styled.div`
   gap: 2px;
 `;
 
-const Step = styled.div`
-  background: green;
-`;
+const Steps = ({ steps }) => {
+  const stepsArray = Array(steps).fill('');
 
-const Steps = () => {
   return (
     <Wrapper>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
-      <Step></Step>
+      {stepsArray.map((step, i) => (
+        <Step key={i} />
+      ))}
     </Wrapper>
   );
 };

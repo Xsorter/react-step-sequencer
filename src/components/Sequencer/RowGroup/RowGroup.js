@@ -17,12 +17,13 @@ const Title = styled.h2`
   margin-bottom: 10px;
 `;
 
-const RowGroup = ({ title, type }) => {
+const RowGroup = ({ title, type, synthData }) => {
   return (
     <Wrapper type={type}>
       <Title>{title}</Title>
-      <Row />
-      <Row />
+      {synthData.map((synth, i) => (
+        <Row key={i} steps={synth.steps} name={synth.name} />
+      ))}
     </Wrapper>
   );
 };
